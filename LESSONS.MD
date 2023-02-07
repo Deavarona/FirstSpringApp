@@ -24,3 +24,17 @@ This file is a space for small notes I'd like to mark after listening lectures.
     - Java annotations & few XML configuration
     - Using only Java code
 - Do not use Interfaces in application.xml as beans ('cause impossible to create an object of interface).
+
+### Notes for [Lesson 5](https://youtu.be/MjnVZgMnTT0)
+
+- **Working with Spring steps:**
+    - **To create Java class - future Beans.**
+    - **To create Beans and their dependencies with Spring (XML/annotations/Java code).**
+    - **After creating all Beans are places in Spring container.**
+- Dependency Injection (DI) ways:
+    - Using constructor.
+    - Using setter.
+    - Scope, Factory Method etc.
+    - XML/annotations/Java code.
+    - Autowiring.
+- Dependency Injection (DI) is used to avoid manual dependency and objects creation.
