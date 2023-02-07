@@ -29,3 +29,5 @@ Inversion of Control (IoC). What is IoC? How to use it in Spring Application?
 [Source](https://youtu.be/Ns0IxBXDbWw)
 
 ### Lesson 5.
+
+Dependency Injections (DI). Part 1. What is DI?
