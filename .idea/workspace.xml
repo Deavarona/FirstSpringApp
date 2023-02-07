@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae87aa1-a9cf-403f-893b-15d522eda7ab" name="Changes" comment="Lesson 2, 7-2-2023">
-      <change afterPath="$PROJECT_DIR$/LESSONS.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/kkotto/ClassicalMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/kkotto/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/kkotto/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/kkotto/RockMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lecture notes.MD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/kkotto/TestBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/kkotto/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/kkotto/TestSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4ae87aa1-a9cf-403f-893b-15d522eda7ab" name="Changes" comment="Lesson 4, 7-2-2023" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675760927334</updated>
-      <workItem from="1675760928046" duration="5050000" />
+      <workItem from="1675760928046" duration="5385000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 2, 7-2-2023">
       <created>1675764011798</created>
@@ -102,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675764011798</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lesson 4, 7-2-2023">
+      <created>1675766456360</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675766456360</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson 2, 7-2-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 2, 7-2-2023" />
+    <MESSAGE value="Lesson 4, 7-2-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4, 7-2-2023" />
   </component>
 </project>
