@@ -1,3 +1,9 @@
+Use this to solve .idea garbage that is still not included into .gitignore:
+``` 
+git rm -r --cached .idea
+```
+Say thanks to [source](https://bigdata-etl.com/gitignore-intellij-not-working-idea-git/)
+
 # Lecture notes
 
 This file is a space for small notes I'd like to mark after listening lectures.
