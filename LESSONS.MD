@@ -54,3 +54,33 @@ This file is a space for small notes I'd like to mark after listening lectures.
 - To read properties from file use <context:property-placeholder location="classpath:player.properties"/>. All files
   placed in "resources" directory are also placed as "classpath".
 - ${} to get values from .properties file.
+- To inject List of references:
+  ```
+  <property name="musicList">
+            <list>
+                <ref bean="rockMusic"/>
+                <ref bean="classicalMusic"/>
+                <ref bean="rapMusic"/>
+            </list>
+        </property> 
+  ```
+- To inject List of values:
+
+ ```
+  <property name="musicList">
+            <list>
+                <ref bean="rockMusic"/>
+                <ref bean="classicalMusic"/>
+                <ref bean="rapMusic"/>
+            </list>
+        </property> 
+  ```
+
+- It's possible to use:
+
+``` 
+<util:list id="myList" value-type="java.lang.String">
+    <value>foo</value>
+    <value>bar</value>
+</util:list>
+```

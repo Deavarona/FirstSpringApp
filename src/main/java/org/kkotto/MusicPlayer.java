@@ -1,20 +1,25 @@
 package org.kkotto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MusicPlayer {
-    private Music music;
+    private List<Music> musicList;
     private String name;
     private int volume;
 
     public void playMusic() {
-        System.out.println("Playing " + music.getSong());
+        for (Music music : this.musicList) {
+            System.out.println("Playing: " + music.getSong());
+        }
     }
 
-    public void setMusic(Music music) {
-        this.music = music;
+    public void setMusicList(List<Music> musicList) {
+        this.musicList = new ArrayList<>(musicList);
     }
 
-    public Music getMusic() {
-        return music;
+    public List<Music> getMusicList() {
+        return musicList;
     }
 
     public String getName() {
