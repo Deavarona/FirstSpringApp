@@ -30,6 +30,12 @@ Inversion of Control (IoC). What is IoC? How to use it in Spring Application?
 
 ### Lesson 5.
 
-Dependency Injections (DI). Part 1. What is DI?
+Dependency Injection (DI). Part 1. What is DI? DI using Constructor.
 
 [Source](https://youtu.be/MjnVZgMnTT0)
+
+### Lesson 6.
+
+Dependency Injection (DI). Part 2. DI using Setter.
+
+[Source](https://youtu.be/dBxRmUH3Af8)

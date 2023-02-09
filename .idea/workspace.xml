@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae87aa1-a9cf-403f-893b-15d522eda7ab" name="Changes" comment="Lesson 4, 7-2-2023">
+    <list default="true" id="4ae87aa1-a9cf-403f-893b-15d522eda7ab" name="Changes" comment="Lesson 5: description update">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LESSONS.MD" beforeDir="false" afterPath="$PROJECT_DIR$/LESSONS.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/kkotto/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/kkotto/MusicPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/kkotto/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/kkotto/TestSpring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
     </list>
@@ -27,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,19 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b9e578a60246f2b2e40f9a9cb248d3ec&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.kkotto.TestSpring" />
@@ -92,6 +95,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675760927334</updated>
       <workItem from="1675760928046" duration="5385000" />
+      <workItem from="1675767999913" duration="1250000" />
+      <workItem from="1675966841845" duration="962000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 2, 7-2-2023">
       <created>1675764011798</created>
@@ -107,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675766456360</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson 5: Dependency Injections, 7-2-2023">
+      <created>1675768075123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675768075123</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Lesson 5: description update">
+      <created>1675768122991</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675768122991</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +135,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson 2, 7-2-2023" />
     <MESSAGE value="Lesson 4, 7-2-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4, 7-2-2023" />
+    <MESSAGE value="Lesson 5: Dependency Injections, 7-2-2023" />
+    <MESSAGE value="Lesson 5: description update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 5: description update" />
   </component>
 </project>

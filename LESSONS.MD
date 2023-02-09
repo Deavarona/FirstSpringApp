@@ -38,3 +38,19 @@ This file is a space for small notes I'd like to mark after listening lectures.
     - XML/annotations/Java code.
     - Autowiring.
 - Dependency Injection (DI) is used to avoid manual dependency and objects creation.
+
+### Notes for [Lesson 6](https://youtu.be/dBxRmUH3Af8)
+
+- We used Reference for constructor as DI way.
+- We use Value for setter as DI way.
+- We can use File for setter as DI way.
+- For application.xml <property>: application.xml takes setter name from Java class.
+  It knows about "set" and camel case in names and ignores them using only second part converting from camel case to
+  lower case.
+  So for <property name="music"/> the only setter we need in MusicPlayer.java is void setMusic (M in upper case).
+- If you don't use constructor-args in application.xml don't forget to create default constructor in appropriate Java
+  class.
+- Using <property name="music"/> Spring creates a Bean with default constructor and only then set values with setter.
+- To read properties from file use <context:property-placeholder location="classpath:player.properties"/>. All files
+  placed in "resources" directory are also placed as "classpath".
+- ${} to get values from .properties file.
