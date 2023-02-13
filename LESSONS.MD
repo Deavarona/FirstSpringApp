@@ -1,7 +1,9 @@
 Use this to solve .idea garbage that is still not included into .gitignore:
+
 ``` 
 git rm -r --cached .idea
 ```
+
 Say thanks to [source](https://bigdata-etl.com/gitignore-intellij-not-working-idea-git/)
 
 # Lecture notes
@@ -90,3 +92,14 @@ This file is a space for small notes I'd like to mark after listening lectures.
     <value>bar</value>
 </util:list>
 ```
+
+### Notes for [Lesson 7](https://youtu.be/IcwWPjeBpFU)
+
+- Scope - область видимости
+- Scope задает то, как Spring будет создавать бины.
+- Singleton is default scope. It creates only one object of one bean and the rest objects based on that bean just refer
+  to it instead of creating new object. Many objects - one link.
+- Singleton is used when the object is stateless.
+- Changing the state of one object we change states of every object.
+- Prototype creates new object everytime we use getBean().
+- Prototype is used when bean is stateful.

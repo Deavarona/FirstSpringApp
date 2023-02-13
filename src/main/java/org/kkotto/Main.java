@@ -8,6 +8,10 @@ public class Main {
                 "application.xml"
         );
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer second = context.getBean("musicPlayer", MusicPlayer.class);
+        musicPlayer.setVolume(10);
+        System.out.println((musicPlayer == second));
+        System.out.println(musicPlayer.getVolume() + " and " + second.getVolume());
         musicPlayer.playMusic();
         System.out.println(musicPlayer.getName());
         System.out.println(musicPlayer.getVolume());

@@ -39,3 +39,9 @@ Dependency Injection (DI). Part 1. What is DI? DI using Constructor.
 Dependency Injection (DI). Part 2. DI using Setter.
 
 [Source](https://youtu.be/dBxRmUH3Af8)
+
+### Lesson 7.
+
+Bean scope (Область видимости, Area of visibility).
+
+[Source](https://youtu.be/IcwWPjeBpFU)
