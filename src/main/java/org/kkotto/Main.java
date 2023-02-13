@@ -11,6 +11,8 @@ public class Main {
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         MusicPlayer copy = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
+        ClassicalMusic classicalMusic = context.getBean("classicalMusic", ClassicalMusic.class);
+        System.out.println(classicalMusic.getSong());
         context.close();
     }
 }

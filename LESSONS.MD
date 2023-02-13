@@ -125,3 +125,6 @@ Spring application closing.
         - Spring не берет на себя полный ЖЦ бинов со scope prototype. Spring отдает prototype бины клиенту и больше о
           них не заботится, в отличии от singleton бинов.
         - Вызывается столько инит-методов prototype бинов, сколько их было создано.
+- If we use factory method we can say Spring the factory method. Then the object will be created with factory method
+  instead of direct "new".
+- Scope singleton >>> factory method with "new" everytime.

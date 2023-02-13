@@ -14,7 +14,8 @@ http://www.springframework.org/schema/context/spring-context.xsd">
     <bean id="classicalMusic"
           class="org.kkotto.MusicGenres.ClassicalMusic"
           init-method="initMethod"
-          destroy-method="destroyMethod">
+          destroy-method="destroyMethod"
+          factory-method="getClassicalMusic">
     </bean>
     <bean id="rapMusic"
           class="org.kkotto.MusicGenres.RapMusic">
