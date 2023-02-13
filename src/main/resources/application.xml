@@ -12,14 +12,18 @@ http://www.springframework.org/schema/context/spring-context.xsd">
           class="org.kkotto.MusicGenres.RockMusic">
     </bean>
     <bean id="classicalMusic"
-          class="org.kkotto.MusicGenres.ClassicalMusic">
+          class="org.kkotto.MusicGenres.ClassicalMusic"
+          init-method="initMethod"
+          destroy-method="destroyMethod">
     </bean>
     <bean id="rapMusic"
           class="org.kkotto.MusicGenres.RapMusic">
     </bean>
     <bean id="musicPlayer"
           class="org.kkotto.MusicPlayer"
-          scope="prototype">
+          scope="prototype"
+          init-method="initMethod"
+          destroy-method="destroyMethod">
         <property name="musicList">
             <list>
                 <ref bean="rockMusic"/>

@@ -1,5 +1,6 @@
 package org.kkotto;
 
+import org.kkotto.MusicGenres.ClassicalMusic;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
@@ -8,13 +9,8 @@ public class Main {
                 "application.xml"
         );
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        MusicPlayer second = context.getBean("musicPlayer", MusicPlayer.class);
-        musicPlayer.setVolume(10);
-        System.out.println((musicPlayer == second));
-        System.out.println(musicPlayer.getVolume() + " and " + second.getVolume());
+        MusicPlayer copy = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
-        System.out.println(musicPlayer.getName());
-        System.out.println(musicPlayer.getVolume());
         context.close();
     }
 }

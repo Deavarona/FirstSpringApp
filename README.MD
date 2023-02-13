@@ -45,3 +45,9 @@ Dependency Injection (DI). Part 2. DI using Setter.
 Bean scope (Область видимости, Area of visibility).
 
 [Source](https://youtu.be/IcwWPjeBpFU)
+
+### Lesson 8.
+
+Bean Lifecycle. Init, Destroy and Factory methods.
+
+[Source](https://youtu.be/MVbBLoZrT2A)

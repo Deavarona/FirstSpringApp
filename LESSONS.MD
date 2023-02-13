@@ -103,3 +103,25 @@ This file is a space for small notes I'd like to mark after listening lectures.
 - Changing the state of one object we change states of every object.
 - Prototype creates new object everytime we use getBean().
 - Prototype is used when bean is stateful.
+
+### Notes for [Lesson 8](https://youtu.be/MVbBLoZrT2A)
+
+Bean Lifecycle: Spring application starting -> Spring container starting -> An object of a bean is created ->
+Dependency Injection -> Init method of the bean is called -> Bean is used -> Destroy method of the bean is called ->
+Spring application closing.
+
+Жизненный цикл бина: Запуск спринг приложения -> Запуск спринг контейнера -> Создание объекта бина -> Внедрение
+зависимостей -> Вызов инит-метода бина -> Бин готов к использованию, использование бина -> Вызов дестрой-метода ->
+Остановка спринг приложения.
+
+- Init-method is used for initialization of recourses, DBs, foreign files.
+- Destroy-method is used for resources clearing, threads closing (input and output), closing DBs access.
+- Инит и дестрой методы:
+    - Любой модификатор доступа.
+    - Любой тип возвращаемого значения, но в этом нет смысла - нет возможности его получить.
+    - Название метода может быть любым.
+    - Метод **не должен** принимать на вход какие-либо аргументы.
+    - ДЛЯ БИНОВ СО SCOPE PROTOTYPE SPRING НЕ ВЫЗЫВАЕТ DESTROY METHOD.
+        - Spring не берет на себя полный ЖЦ бинов со scope prototype. Spring отдает prototype бины клиенту и больше о
+          них не заботится, в отличии от singleton бинов.
+        - Вызывается столько инит-методов prototype бинов, сколько их было создано.
