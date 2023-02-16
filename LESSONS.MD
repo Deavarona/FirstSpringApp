@@ -160,3 +160,8 @@ Spring application closing.
 - @Autowired can be used for 2 different injections in one method: @Autowired / method(First first, Second second).
 - If in first we have second and in second we have third, firstly, Spring injects third to second, then second to first.
 - Does not matter where to use @Autowired (setter, constructor, field), but **please** do use only one type per project.
+
+### Notes for [Lesson 11](https://youtu.be/pDTzRsuGrDU)
+
+- To specify bean when we use @Autowired on interface we can use @Qualifier("beanId")
+- It can be used on setter, constructor, field

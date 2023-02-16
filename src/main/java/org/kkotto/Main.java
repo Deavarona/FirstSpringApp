@@ -1,5 +1,6 @@
 package org.kkotto;
 
+import org.kkotto.music.genres.Genre;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
@@ -8,6 +9,6 @@ public class Main {
                 "application.xml"
         );
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        musicPlayer.playMusic();
+        musicPlayer.playMusic(Genre.RAP);
     }
 }

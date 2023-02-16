@@ -1,5 +1,6 @@
 package org.kkotto.music;
 
 public interface Music {
-    String getSong();
+    String getSong(int songNumber);
+    int getNumberOfSongs();
 }

@@ -63,3 +63,9 @@ Annotations. @Component.
 Annotations. Dependency Injection with @Autowired.
 
 [Source](https://youtu.be/KvyD2Vg4b1Q)
+
+### Lesson 11.
+
+Annotations. Dependency Injection with @Qualifier
+
+[Source](https://youtu.be/pDTzRsuGrDU)
