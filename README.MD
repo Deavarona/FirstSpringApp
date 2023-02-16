@@ -57,3 +57,9 @@ Bean Lifecycle. Init, Destroy and Factory methods.
 Annotations. @Component.
 
 [Source](https://youtu.be/aXDMYy930b4)
+
+### Lesson 10.
+
+Annotations. Dependency Injection with @Autowired.
+
+[Source](https://youtu.be/KvyD2Vg4b1Q)

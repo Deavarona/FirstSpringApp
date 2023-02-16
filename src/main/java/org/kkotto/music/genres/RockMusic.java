@@ -1,6 +1,6 @@
-package org.kkotto.genres;
+package org.kkotto.music.genres;
 
-import org.kkotto.Music;
+import org.kkotto.music.Music;
 import org.springframework.stereotype.Component;
 
 @Component

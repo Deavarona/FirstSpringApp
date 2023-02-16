@@ -1,31 +1,39 @@
 package org.kkotto;
 
-import java.util.List;
+import org.kkotto.music.genres.ClassicalMusic;
+import org.kkotto.music.genres.RapMusic;
+import org.kkotto.music.genres.RockMusic;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MusicPlayer {
-    private List<Music> musicList;
-    private String name;
-    private int volume;
+    private ClassicalMusic classicalMusic;
+    private RapMusic rapMusic;
+    private RockMusic rockMusic;
+
+    @Autowired
+    public MusicPlayer(ClassicalMusic classicalMusic, RapMusic rapMusic, RockMusic rockMusic) {
+        this.classicalMusic = classicalMusic;
+        this.rapMusic = rapMusic;
+        this.rockMusic = rockMusic;
+    }
 
     public void playMusic() {
-        for (Music music : this.musicList) {
-            System.out.println("Playing: " + music.getSong());
-        }
+        System.out.println("Playing: " + classicalMusic.getSong());
+        System.out.println("Playing: " + rapMusic.getSong());
+        System.out.println("Playing: " + rockMusic.getSong());
     }
 
-    public void setMusicList(List<Music> musicList) {
-        this.musicList = musicList;
+    public void setClassicalMusic(ClassicalMusic classicalMusic) {
+        this.classicalMusic = classicalMusic;
     }
 
-    public List<Music> getMusicList() {
-        return musicList;
+    public void setRapMusic(RapMusic rapMusic) {
+        this.rapMusic = rapMusic;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getVolume() {
-        return volume;
+    public void setRockMusic(RockMusic rockMusic) {
+        this.rockMusic = rockMusic;
     }
 }

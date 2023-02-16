@@ -143,3 +143,20 @@ Spring application closing.
 - Annotation @Component marks class as Bean (future Spring Object)
 - Do not use @Component on interfaces - you cannot create object of interface
 - @Component creates ID with nameOfClass. You can write custom id using @Component("newId")
+
+### Notes for [Lesson 10](https://youtu.be/KvyD2Vg4b1Q)
+
+- Annotation @Autowired helps to inject dependencies automatically. Spring searches for suitable bean on its own.
+- Steps:
+    - Spring scans all classes with @Component annotation and creates beans for these classes.
+    - Spring scans all created beans and checks if at least one bean is possible to inject to place with @Autowired.
+    - If one bean is perfectly suitable it is injected as dependency.
+    - If there's no suitable beans we get an error.
+    - If there's more than 1 suitable beans we get an error.
+- Annotation @Autowired searches for a bean by their type (class or interface).
+- @Autowired can be used on fields, setters and constructors.
+- @Autowired injects dependencies even into private fields (using Java Reflection API).
+- @Autowired does not care how the method is called, it injects dependencies even into quackQuack(Interface interface).
+- @Autowired can be used for 2 different injections in one method: @Autowired / method(First first, Second second).
+- If in first we have second and in second we have third, firstly, Spring injects third to second, then second to first.
+- Does not matter where to use @Autowired (setter, constructor, field), but **please** do use only one type per project.
