@@ -51,3 +51,9 @@ Bean scope (Область видимости, Area of visibility).
 Bean Lifecycle. Init, Destroy and Factory methods.
 
 [Source](https://youtu.be/MVbBLoZrT2A)
+
+### Lesson 9.
+
+Annotations. @Component.
+
+[Source](https://youtu.be/aXDMYy930b4)

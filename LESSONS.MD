@@ -128,3 +128,18 @@ Spring application closing.
 - If we use factory method we can say Spring the factory method. Then the object will be created with factory method
   instead of direct "new".
 - Scope singleton >>> factory method with "new" everytime.
+
+### Notes for [Lesson 9](https://youtu.be/aXDMYy930b4)
+
+- Java Annotations - special comment type in code that helps:
+    - to give instructions to Java compiler (ex: @Override)
+    - to give instructions to code analysers
+    - to give metadata that is used by Java app (with reflection) or other apps & frameworks (ex: Spring Framework)
+- Reasons to use Java Annotations:
+    - shorter than XML configuration
+    - handier than XML configuration
+    - code is more clear
+- Spring scans all classes
+- Annotation @Component marks class as Bean (future Spring Object)
+- Do not use @Component on interfaces - you cannot create object of interface
+- @Component creates ID with nameOfClass. You can write custom id using @Component("newId")
