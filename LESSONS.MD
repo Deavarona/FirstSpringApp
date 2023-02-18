@@ -165,3 +165,11 @@ Spring application closing.
 
 - To specify bean when we use @Autowired on interface we can use @Qualifier("beanId")
 - It can be used on setter, constructor, field
+
+### Notes for [Lesson 12](https://youtu.be/oNfK1FJ7Lkw)
+
+- @Scope("singleton"), @Scope("prototype")
+- @Value("${musicPlayer.name}"), for application.xml <context:property-placeholder location="classpath:
+  player.properties"/>
+- @PostConstructor marks init-method
+- @PreDestroy marks destroy-method

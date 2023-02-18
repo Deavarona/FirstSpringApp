@@ -66,6 +66,12 @@ Annotations. Dependency Injection with @Autowired.
 
 ### Lesson 11.
 
-Annotations. Dependency Injection with @Qualifier
+Annotations. Dependency Injection with @Qualifier.
 
 [Source](https://youtu.be/pDTzRsuGrDU)
+
+### Lesson 12.
+
+Annotations @Scope, @Value, @PostConstructor, @PreDestroy.
+
+[Source](https://youtu.be/oNfK1FJ7Lkw)
