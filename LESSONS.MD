@@ -165,3 +165,52 @@ Spring application closing.
 
 - To specify bean when we use @Autowired on interface we can use @Qualifier("beanId")
 - It can be used on setter, constructor, field
+
+### Notes for [Lesson 12](https://youtu.be/oNfK1FJ7Lkw)
+
+- @Scope("singleton"), @Scope("prototype")
+- @Value("${musicPlayer.name}"), for application.xml <context:property-placeholder location="classpath:
+  player.properties"/>
+- @PostConstructor marks init-method
+- @PreDestroy marks destroy-method
+- @PostConstruct and @PreDestroy in Java 9+ require
+- destroy-method won't appear if you don't use context.close()
+
+``` 
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
+```
+
+### Notes for [Lesson 13](https://youtu.be/stuAmyyootQ)
+
+- We can config app with XML, Java+XML, only Java
+- When we config app only with Java we use @Configuration public class ConfigClass instead of application.xml
+- Clear @Configuration class is equal to clear application.xml (with xmlns)
+- All tags are replaced with Annotations: <context:component:scan base-package=""/> -> @ComponentScan("")
+- Manual <bean/> creation can be replaced with manual @Bean **in** @Configuration class but @Component is more handy to
+  use
+- ClassPathXmlApplicationContext -> AnnotationConfigApplicationContext
+- DI with manual beans creation:
+
+```
+@Configuration
+public class SpringConfig {
+  @Bean
+  public ClassicalMusic musicBean() {
+        return new ClassicalMusic();
+    }
+    
+  @Bean
+  public MusicPlayer musicPlayer() {
+        return new MusicPlayer(musicBean());
+    }
+}
+```
+
+- There musicPlayer and musicBean are also ID's of beans
+- MusicPlayer(musicBean()) is DI of musicBean into MusicPlayer
+- Since the default scope is singleton musicBean is created only once
+- <context:property-placeholder location="classpath"> -> @PropertySource("classpath:")
